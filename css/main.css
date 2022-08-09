@@ -1,0 +1,97 @@
+.app {
+  overflow: hidden;
+  /* height: 200vh; */
+}
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* height: var(--header-height); */
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  height: var(--navbar-height);
+  padding: 0 16px;
+}
+.header__navbar-logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  line-height: var(--navbar-height);
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 0.2px #fff;
+  background: url("https://cdn.hashnode.com/res/hashnode/image/upload/v1652000439875/0yJcPGz_S.png?auto=compress,format&format=webp");
+  -webkit-background-clip: text;
+  background-size: cover;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.header__navbar-menu-bars {
+  display: flex;
+  margin: auto 0;
+}
+.header__navbar-menu-bars svg {
+  fill: rgb(0, 0, 0);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: rgb(222, 207, 41);
+  border-radius: 50%;
+}
+/* menu visibility */
+.nav__all {
+  list-style: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(127, 255, 212, 0.5);
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform linear 0.75s, opacity linear 0.75s;
+}
+.nav__all-list-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav__all-list a:hover {
+  color: rgb(226, 159, 42);
+  text-decoration: dashed underline grey;
+}
+.nav__all-list li {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__all-list {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 5%; */
+  width: 100%;
+}
+.nav__all-list a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#nav__input:checked ~ .nav__all {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* End header */
