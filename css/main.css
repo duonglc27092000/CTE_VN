@@ -35,18 +35,24 @@
     background-position: 2000px 0;
   }
 }
+.header__navbar-menu-bars label {
+  margin: 0;
+  padding: 0;
+}
+
 .header__navbar-menu-bars {
   display: flex;
   margin: auto 0;
+  padding: 0;
 }
-.header__navbar-menu-bars svg {
+.nav__all-btn svg {
   fill: rgb(0, 0, 0);
   width: 30px;
   height: 30px;
-  padding: 5px;
+  padding: 5px 0 ;
   background-color: rgb(222, 207, 41);
   border-radius: 50%;
-  margin: 0;
+  margin-top: 4px;
 }
 /* menu visibility */
 .nav__all {
