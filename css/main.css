@@ -45,13 +45,13 @@
   margin: 0;
   padding: 0;
   margin-top: 4px;
-
+  -webkit-margin-top: 4px;
 }
 .nav__all-btn svg {
   fill: rgb(0, 0, 0);
   width: 30px;
   height: 30px;
-  padding: 5px 0 ;
+  padding: 5px 0;
   background-color: rgb(222, 207, 41);
   border-radius: 50%;
 }
