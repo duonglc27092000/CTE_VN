@@ -46,6 +46,7 @@
   padding: 5px;
   background-color: rgb(222, 207, 41);
   border-radius: 50%;
+  margin: 0;
 }
 /* menu visibility */
 .nav__all {
@@ -59,12 +60,12 @@
   transform: translateY(50%);
   opacity: 0;
   transition: transform linear 0.75s, opacity linear 0.75s;
-  z-index: 10;
 }
 .nav__all-list-wrap {
   display: flex;
   align-items: center;
   height: 100%;
+  z-index: 100;
 }
 .nav__all-list a:hover {
   color: rgb(226, 159, 42);
@@ -99,9 +100,10 @@
 /* Start container */
 .app__container {
   margin-top: var(--navbar-height);
+  position: relative;
 }
 .wall__background {
-  position: relative;
+  /* position: relative; */
 }
 .wall__background-img img {
   width: 100%;
