@@ -77,13 +77,14 @@
 }
 .nav__all-list a:hover {
   color: rgb(226, 159, 42);
-  text-decoration: dashed underline grey;
+  /* text-decoration: dashed underline grey; */
 }
 .nav__all-list li {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .nav__all-list {
@@ -115,8 +116,9 @@
 }
 .wall__background-img img {
   width: 100%;
-  height: 40vh;
-  background-size: center;
+  height: 50vh;
+  background-size: cover;
+  background-position: center
 }
 .wall__background-text {
   position: absolute;

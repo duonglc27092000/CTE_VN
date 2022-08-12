@@ -9,6 +9,11 @@
 /* Mobile */
 
 @media (max-width: 739px) {
+  .wall__background-text {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+  }
 }
 /*  PC & tablet */
 
