@@ -48,6 +48,10 @@
   margin-top: 4px;
   -webkit-margin-top: 4px;
 }
+.nav__all {
+  user-select: none;
+}
+
 .nav__all-btn svg {
   fill: rgb(0, 0, 0);
   width: 30px;
@@ -55,6 +59,7 @@
   padding: 5px 0;
   background-color: rgb(222, 207, 41);
   border-radius: 50%;
+  cursor: pointer;
 }
 /* menu visibility */
 .nav__all {
@@ -104,9 +109,10 @@
   transform: translateY(0);
   opacity: 1;
 }
-
 /* End header */
+
 /* Start container */
+/* wallpaper & text */
 .app__container {
   margin-top: var(--navbar-height);
   position: relative;
@@ -134,10 +140,10 @@
   text-align: center;
 }
 
-
+/* Content */
 .content div h1 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   padding: 40px 0;
   text-transform: uppercase;
   font-size: 60px;
@@ -219,8 +225,6 @@
 .tab-pane.active {
   display: block;
 }
-
-
 
 .tab-pane li {
   margin: 10px 0;
