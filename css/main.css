@@ -147,7 +147,7 @@
   padding: 40px 0;
   text-transform: uppercase;
   font-size: 60px;
-  margin: 40px;
+  margin: 80px 0;
   font-weight: 600;
   color: #3580c2;
   text-shadow: 5px 5px 30px #95c235;
@@ -159,12 +159,17 @@
   align-items: center;
 }
 /* css for content */
-.tabs {
+.tabs__projects,
+.tabs__contact,
+.tabs__products,
+.tabs__about {
   display: flex;
   position: relative;
 }
 
-.tabs .line {
+.tabs__products .line__products,
+.tabs__projects .line__projects,
+.tabs__about .line__about {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -175,7 +180,9 @@
   transition: all 0.35s ease;
 }
 
-.tab-item {
+.tab-item_products,
+.tab-item_projects,
+.tab-item_about {
   min-width: 80px;
   padding: 16px 20px 11px 20px;
   font-size: 32px;
@@ -188,51 +195,57 @@
   opacity: 0.6;
   cursor: pointer;
   transition: all 0.5s ease;
+  line-height: 40px;
 }
 
-.tab-icon {
-  font-size: 24px;
-  width: 32px;
-  position: relative;
-  top: 2px;
-}
 
-.tab-item:hover {
+.tab-item_products:hover,
+.tab-item_projects:hover,
+.tab-item_about:hover {
   opacity: 1;
   background-color: rgba(194, 53, 100, 0.05);
   border-color: rgba(194, 53, 100, 0.1);
 }
 
-.tab-item.active {
+.tab-item_products.active,
+.tab-item_projects.active,
+.tab-item_about.active {
   opacity: 1;
 }
 
-.tab-content {
+.tabs__products-content 
+.tabs__projects-content ,
+.tabs__about-content {
   padding: 28px 0;
 }
 
-.tab-pane {
+.tab-pane_products,
+.tab-pane_projects,
+.tab-pane_about {
   font-size: 40px;
   line-height: 40px;
   text-align: justify;
-}
-
-.tab-pane {
   color: #333;
   display: none;
 }
 
-.tab-pane.active {
+.tab-pane_products.active,
+.tab-pane_projects.active,
+.tab-pane_about.active {
   display: block;
 }
 
-.tab-pane li {
+.tab-pane_products li,
+.tab-pane_projects li,
+.tab-pane_about li {
   margin: 10px 0;
   padding-left: 100px;
   list-style: none;
 }
 
-.tab-pane h2 {
+.tab-pane_products h2,
+.tab-pane_projects h2,
+.tab-pane_about h2 {
   font-size: 28px;
   margin-bottom: 8px;
 }

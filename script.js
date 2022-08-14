@@ -5,14 +5,6 @@ const closeIcon = $(".header__navbar-menu-bars--close");
 const menuIcon = $(".header__navbar-menu-bars--menu");
 // const elements = $$(".content div h1");
 
-// elements.forEach((element) => {
-//   element.scrollIntoView({
-//     behavior: "smooth",
-//     block: "start",
-//     inline: "nearest",
-//   });
-// });
-
 //toggle icon menu_________________
 closeIcon.onclick = function () {
   menuIcon.classList.toggle("hide");
@@ -27,8 +19,9 @@ menuIcon.onclick = function () {
 const link_lis = $$(".nav__all-list li");
 
 link_lis.forEach((tab, index) => {
-  tab.onclick = function () {
+  tab.onclick = function (e) {
     $("#nav__input").checked = false;
+    line;
     menuIcon.classList.toggle("hide");
     closeIcon.classList.toggle("hide");
   };
@@ -37,35 +30,70 @@ link_lis.forEach((tab, index) => {
 
 // toggle icon menu END_______________
 
-// function d7() {
-//   tabs.forEach((tab, index) => {
-//     tab.onclick = function () {
-//       $(".nav__all-btn.hide").classList.remove("hide");
-//       this.classList.add("hide");
-//     };
-//   });
-// }
-const tabs = $$(".tab-item");
-const panes = $$(".tab-pane");
+const tabs__products = $$(".tab-item_products");
+const tabs__projects = $$(".tab-item_projects");
+const tabs__about = $$(".tab-item_about");
 
-const tabActive = $(".tab-item.active");
-const line = $(".tabs .line");
+const panes__products = $$(".tab-pane_products");
+const panes__about = $$(".tab-pane_about");
+const panes__projects = $$(".tab-pane_prjects");
 
-// SonDN fixed - Active size wrong size on first load.
-// Original post: https://www.facebook.com/groups/649972919142215/?multi_permalinks=1175881616551340
+const tabActive__about = $(".tab-item_about.active");
+const tabActive__products = $(".tab-item_products.active");
+const tabActive__projects = $(".tab-item_projects.active");
+
+const line__products = $(".tabs__products .line__products");
+const line__projects = $(".tabs__projects .line__projects");
+const line__about = $(".tabs__about .line__about");
+
+//about
 requestIdleCallback(function () {
-  line.style.left = tabActive.offsetLeft + "px";
-  line.style.width = tabActive.offsetWidth + "px";
+  line__about.style.left = tabActive__about.offsetLeft + "px";
+  line__about.style.width = tabActive__about.offsetWidth + "px";
+  line__projects.style.left = tabActive__projects.offsetLeft + "px";
+  line__projects.style.width = tabActive__projects.offsetWidth + "px";
+  line__products.style.left = tabActive__products.offsetLeft + "px";
+  line__products.style.width = tabActive__products.offsetWidth + "px";
 });
-tabs.forEach((tab, index) => {
-  const pane = panes[index];
+tabs__about.forEach((tab, index) => {
+  const pane = panes__about[index];
 
   tab.onclick = function () {
-    $(".tab-item.active").classList.remove("active");
-    $(".tab-pane.active").classList.remove("active");
+    $(".tab-item_about.active").classList.remove("active");
+    $(".tab-pane_about.active").classList.remove("active");
 
-    line.style.left = this.offsetLeft + "px";
-    line.style.width = this.offsetWidth + "px";
+    line__about.style.left = this.offsetLeft + "px";
+    line__about.style.width = this.offsetWidth + "px";
+
+    this.classList.add("active");
+    pane.classList.add("active");
+  };
+});
+//project
+tabs__projects.forEach((tab, index) => {
+  const pane = panes__projects[index];
+
+  tab.onclick = function () {
+    $(".tab-item_projects.active").classList.remove("active");
+    $(".tab-pane_projects.active").classList.remove("active");
+
+    line__projects.style.left = this.offsetLeft + "px";
+    line__projects.style.width = this.offsetWidth + "px";
+
+    this.classList.add("active");
+    pane.classList.add("active");
+  };
+});
+//product
+tabs__products.forEach((tab, index) => {
+  const pane = panes__products[index];
+
+  tab.onclick = function () {
+    $(".tab-item_products.active").classList.remove("active");
+    $(".tab-pane_products.active").classList.remove("active");
+
+    line__products.style.left = this.offsetLeft + "px";
+    line__products.style.width = this.offsetWidth + "px";
 
     this.classList.add("active");
     pane.classList.add("active");
