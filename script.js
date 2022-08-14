@@ -19,9 +19,8 @@ menuIcon.onclick = function () {
 const link_lis = $$(".nav__all-list li");
 
 link_lis.forEach((tab, index) => {
-  tab.onclick = function (e) {
+  tab.onclick = function () {
     $("#nav__input").checked = false;
-    line;
     menuIcon.classList.toggle("hide");
     closeIcon.classList.toggle("hide");
   };
