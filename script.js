@@ -36,7 +36,7 @@ const tabs__about = $$(".tab-item_about");
 
 const panes__products = $$(".tab-pane_products");
 const panes__about = $$(".tab-pane_about");
-const panes__projects = $$(".tab-pane_prjects");
+const panes__projects = $$(".tab-pane_projects");
 
 const tabActive__about = $(".tab-item_about.active");
 const tabActive__products = $(".tab-item_products.active");
