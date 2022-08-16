@@ -158,7 +158,7 @@
   flex-direction: column;
   align-items: center;
 }
-/* css for content */
+/* css for UI content */
 .tabs__projects,
 .tabs__contact,
 .tabs__products,
@@ -198,7 +198,6 @@
   line-height: 40px;
 }
 
-
 .tab-item_products:hover,
 .tab-item_projects:hover,
 .tab-item_about:hover {
@@ -213,8 +212,7 @@
   opacity: 1;
 }
 
-.tabs__products-content 
-.tabs__projects-content ,
+.tabs__products-content .tabs__projects-content,
 .tabs__about-content {
   padding: 28px 0;
 }
@@ -238,15 +236,33 @@
 .tab-pane_products li,
 .tab-pane_projects li,
 .tab-pane_about li {
-  margin: 10px 0;
-  padding-left: 100px;
-  list-style: none;
+  margin: 16px 0;
+  list-style: inside circle;
 }
 
 .tab-pane_products h2,
 .tab-pane_projects h2,
 .tab-pane_about h2 {
   font-size: 28px;
-  margin-bottom: 8px;
+  margin: 8px 0;
+}
+
+/* img */
+.about__img {
+  height: auto;
+  width: 100%;
+}
+.img-description .img {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center
+}
+.products-wrap .item-detail {
+  padding: 16px ;
+}
+.products-wrap .item-detail p{
+  font-size: 24px;
 }
 /* End container */
