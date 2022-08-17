@@ -230,6 +230,7 @@
 .tab-pane_products.active,
 .tab-pane_projects.active,
 .tab-pane_about.active {
+  transition: all 1.35s ease;
   display: block;
 }
 
@@ -252,17 +253,33 @@
   height: auto;
   width: 100%;
 }
+.img-description img {
+  max-width: 100%;
+}
+.wrap-info-projects .img,
 .img-description .img {
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center
+  align-items: center;
 }
+.products-wrap .item-detail img {
+  width: 100%;
+  background-size: cover;
+}
+.wrap-info-projects img {
+  width: 100%;
+  background-size: cover;
+
+}
+.wrap-info-projects .d1,
 .products-wrap .item-detail {
-  padding: 16px ;
+  padding: 16px;
 }
-.products-wrap .item-detail p{
+.wrap-info-projects p,
+.products-wrap .item-detail p {
   font-size: 24px;
+  text-align: left;
 }
 /* End container */
