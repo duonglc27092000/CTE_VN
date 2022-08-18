@@ -1,6 +1,17 @@
 /* mobile & Tablet */
 
 @media (max-width: 1023px) {
+  .img-description .img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .products-wrap .item-detail {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
 /* Tablet */
 
