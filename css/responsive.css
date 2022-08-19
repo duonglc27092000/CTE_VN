@@ -12,6 +12,10 @@
     margin: 0 auto;
     flex-direction: column;
   }
+  .info_and_map {
+    display: flex;
+    flex-direction: column;
+  }
 }
 /* Tablet */
 
