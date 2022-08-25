@@ -14,7 +14,7 @@ img {
 }
 img:hover {
   transition: all 0.5s ease;
-  transform: scale(1.2, 1.2);
+  transform: scale(1.03, 1.03);
 }
 /* Header */
 .header {
@@ -171,7 +171,7 @@ img:hover {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 /* css for UI content */
 .tabs__projects,
