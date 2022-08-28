@@ -16,6 +16,9 @@
     display: flex;
     flex-direction: column;
   }
+  .header__navbar-menu-on-pc-tablet {
+    display: none;
+  }
 }
 /* Tablet */
 
@@ -40,4 +43,7 @@
 /* pc  */
 
 @media (min-width: 1023px) {
+  .header__navbar-menu-bars {
+    display: none;
+  }
 }

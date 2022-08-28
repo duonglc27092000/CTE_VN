@@ -25,6 +25,8 @@ link_lis.forEach((tab, index) => {
     closeIcon.classList.toggle("hide");
   };
 });
+var a = [1, 2, 34];
+
 // ____________________________________
 
 // toggle icon menu END_______________

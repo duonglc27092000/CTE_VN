@@ -2,6 +2,37 @@
   overflow: hidden;
   /* height: 200vh; */
 }
+.ontop a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.ontop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.nav__all-list-pc-tablet li {
+  list-style: none;
+  display: inline-block;
+}
+.nav__all-list-pc-tablet li a:hover {
+  color: #000;
+}
+.nav__all-list-pc-tablet li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 0 10px;
+  line-height: var(--navbar-height);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav__all-list-pc-tablet ul {
+  display: inline;
+}
+.nav__all-list-pc-tablet {
+  display: inline;
+}
 /* #about,
 #product,
 #project,
@@ -34,7 +65,7 @@ img:hover {
 .header__navbar-logo {
   text-decoration: none;
   color: #fff;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   line-height: var(--navbar-height);
   font-weight: 700;
   color: transparent;
@@ -98,6 +129,7 @@ img:hover {
   color: rgb(226, 159, 42);
   /* text-decoration: dashed underline grey; */
 }
+
 .nav__all-list li {
   margin-top: 50px;
   display: flex;
