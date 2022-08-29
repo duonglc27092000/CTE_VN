@@ -74,6 +74,7 @@ img:hover {
   -webkit-background-clip: text;
   background-size: cover;
   animation: back 20s linear infinite;
+  text-transform: uppercase;
 }
 
 @keyframes back {
@@ -338,15 +339,21 @@ img:hover {
   padding: 10px;
 }
 .contact .info {
-  font-size: 24px;
+  font-size: 2.4rem;
   width: 100%;
 }
 .contact {
   width: 100%;
 }
 
+.info_and_map .info span svg {
+  width: 15px;
+  fill: #be7442;
+}
+.info_and_map p ,
 .info_and_map h3 {
   padding: 10px;
+  line-height: 32px;
 }
 /* End container */
 /* Footer */
@@ -362,6 +369,7 @@ img:hover {
 .d4 p {
   text-align: center;
   padding: 10px 0;
+  font-size: 1.8rem;
 }
 .d4 {
   background-color: #000;
