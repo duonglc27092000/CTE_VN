@@ -14,6 +14,7 @@ menuIcon.onclick = function () {
   menuIcon.classList.toggle("hide");
   closeIcon.classList.toggle("hide");
 };
+// toggle icon menu END_______________
 
 // hide menu then click link content
 const link_lis = $$(".nav__all-list li");
@@ -25,11 +26,8 @@ link_lis.forEach((tab, index) => {
     closeIcon.classList.toggle("hide");
   };
 });
-var a = [1, 2, 34];
 
 // ____________________________________
-
-// toggle icon menu END_______________
 
 const tabs__products = $$(".tab-item_products");
 const tabs__projects = $$(".tab-item_projects");
@@ -47,7 +45,6 @@ const line__products = $(".tabs__products .line__products");
 const line__projects = $(".tabs__projects .line__projects");
 const line__about = $(".tabs__about .line__about");
 
-//about
 requestIdleCallback(function () {
   line__about.style.left = tabActive__about.offsetLeft + "px";
   line__about.style.width = tabActive__about.offsetWidth + "px";
@@ -56,6 +53,8 @@ requestIdleCallback(function () {
   line__products.style.left = tabActive__products.offsetLeft + "px";
   line__products.style.width = tabActive__products.offsetWidth + "px";
 });
+//about
+
 tabs__about.forEach((tab, index) => {
   const pane = panes__about[index];
 
