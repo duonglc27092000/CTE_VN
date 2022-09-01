@@ -10,6 +10,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 9;
 }
 .nav__all-list-pc-tablet li {
   list-style: none;
@@ -350,7 +351,7 @@ img:hover {
   width: 15px;
   fill: #be7442;
 }
-.info_and_map p ,
+.info_and_map p,
 .info_and_map h3 {
   padding: 10px;
   line-height: 32px;
