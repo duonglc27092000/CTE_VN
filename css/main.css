@@ -10,7 +10,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 9;
+  z-index: 8;
 }
 .nav__all-list-pc-tablet li {
   list-style: none;
