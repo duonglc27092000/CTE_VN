@@ -27,7 +27,7 @@ link_lis.forEach((tab, index) => {
   };
 });
 
-// ____________________________________
+// _________________________________
 
 const tabs__products = $$(".tab-item_products");
 const tabs__projects = $$(".tab-item_projects");
